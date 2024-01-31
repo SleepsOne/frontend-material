@@ -1,0 +1,42 @@
+# CSS
+/Theory1: Conflicting selectors and declarations
+
+there are multiple selectors selecting the same element. Which one of them applies? => all rules are applied
+Phương thức ghi đè trong Css hoạt động như thế nào ?
+thứ tự ưu tiên apply các thuộc tính trong css
+từ low -> high (số cao ưu tiên cao) -> multiple chọn last 
+5. declarations marked (!important) (chưa hiểu là cj)
+4. inline-style 
+3. ID (#) selector 
+2. class (.) or pseudo-class(:)
+1. element selector (p, div, li, etc.)
+universal selector (*) 
+
+/Theory2: Inheritance and the universal selector
+/Theory3: CSS box model.
+/Theory4: Type of boxes
+* BLOCK-LEVEL ELEMENTS
+	- Elements are formatted visually as blocks
+	- Elements occupy 100% of parent elements's width, no matter the content
+	- Elements are stacked vertically by default, one after another
+	- The box-model applies as showed earlier
+default elements: body, main, header, footer, section , nav, aside, div, h1-H6, p, ul, ol, li, etc.
+with CSS: display: block
+* INLINE ELEMENT
+	- Occupies only the space necessary for its contents
+	- Causes no-line-breaks after or before the element
+	- Box model applies in a different way: heights and widths do not apply
+	- Paddings and margins are applied only horizontally
+default elements: a, strong, em, button, etc
+width CSS: display: inline
+* INLINE-BLOCk ELEMENT: look like INLINE-LEVEL outside, behaves like BLOCK_LEVEL on the inside
+	- Occupies only the space necessary for its contents
+	- Causes no-line-breaks after or before the element
+	- The box-model applies as showed earlier	
+
+
+
+
+
+
+
