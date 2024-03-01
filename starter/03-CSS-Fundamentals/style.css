@@ -7,11 +7,11 @@
 body {
   color: #444;
   font-family: sans-serif;
-  border-top: 7px solid #1098ad;
   /* margin: 0; */
   position: relative;
 }
 .container {
+  border-top: 7px solid #1098ad;
   width: 800px;
   /* margin-left: auto;
   margin-right: auto; */
@@ -221,6 +221,7 @@ h1::first-letter {
 /* h2::first-letter {
   font-size: 60px;
 } */
+/* h3 + p::first-line { adjesting element */
 h3 + p::first-line {
   color: red;
 }
