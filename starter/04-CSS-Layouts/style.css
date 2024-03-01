@@ -22,7 +22,7 @@ body {
 }
 
 .main-header {
-  /* background-color: #f7f7f7; */
+  background-color: #f7f7f7;
   /* background-color: red; */
   /* padding: 20px;
   padding-left: 40px;
@@ -315,13 +315,13 @@ footer {
 }
 .author {
   margin-bottom: 0;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 .author-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  justify-content: start;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
@@ -344,22 +344,58 @@ footer {
   gap: 20px;
   margin-bottom: 20px;
 }
-.row {
+
+/* FLEXBOX LAYOUT */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
 }
 
 article {
-  /* flex: 0 0 825px; */
+  flex: 0 0 825px;
   flex: 1;
   margin-bottom: 0;
 }
 aside {
-  /* DEFAULT 
+   DEFAULT 
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto; 
-  */
+  
   flex: 0 0 440px;
+} */
+
+
+
+/* CSS GRID */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  /* grid-template-rows: 1fr 12fr; */
+  column-gap: 75px;
+  row-gap: 60px;
+
+  align-items: start;
+
+  
+} 
+
+.main-header {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+article {
+  margin-bottom: 0;
+  /* align-self: start; */
+
+}
+aside {
+  /* align-self: start; */
+}
+footer {
+  /* background-color: #1098ad; */
+  grid-column: 1/-1;
+
 }
